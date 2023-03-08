@@ -1,0 +1,185 @@
+.App{
+    height: 100vh;
+    background-image: url(/public/clima.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+
+
+  
+  .conteiner{
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    height: 300px;
+    width: auto;
+    box-shadow: 0px 0px 30px  rgb(255, 255, 255);
+    background-color: rgba(2, 2, 2, 0.822);
+    border-radius: 60px 60% 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+   
+  }
+
+  .grados-icon{
+    width: 100%;
+    height: 150px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  h1{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 0px 25px;
+   
+  }
+
+  .img{
+    animation: mover 5s infinite;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  
+  
+  }
+
+  @keyframes mover{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+  }
+
+  .date{
+    color: rgb(196, 196, 196);
+    margin-left: 5%;
+    
+
+    }
+
+  h3{
+    margin: 3px;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    padding: 0px 10px;
+    font-size: 18px;
+  }
+
+  .city{
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px rgb(102, 102, 102);
+  }
+
+  .buscador{
+    width: 250px;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    background-color: rgba(2, 2, 2, 0.822);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .buscador:hover{
+    transform: scale(1.1);
+  }
+
+
+  .btn-buscador{
+    height: 25px;
+    width: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(124, 124, 124, 0.719);
+   
+    padding: 5px;
+    border-radius: 10px;
+    color:rgb(255, 255, 255)
+  }
+
+  .btn-buscador:hover{
+    cursor: pointer;
+    background-color: rgba(247, 247, 247, 0.719);
+    color:rgb(0, 0, 0)
+  }
+
+  .buscador-imput{
+    height: 25px;
+    border-radius: 5px;
+  }
+
+  button{
+    height: 25px;
+    width: auto;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    background-color: rgba(2, 2, 2, 0.822);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    transition: .3s;
+  }
+
+
+  button:hover{
+ transform: scale(1.05);
+  }
+
+
+  @media screen and (max-width: 500px) {
+     .conteiner{
+    height: 280px;
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 10px;
+  }
+
+  .grados-icon{
+    margin-top: 0px;
+  }
+
+  .img{
+  width: 130px;
+  height: 130px;
+  }
+
+  h1{
+    font-size: 65px;   
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  .city{
+    margin-top: 5px;
+    font-size: 18px;
+    }
+ 
+
+}
